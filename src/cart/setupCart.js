@@ -41,26 +41,31 @@ import {
     //more stuff coming up
     openCart();
   };
+
   function displayCartItemCount() {
     const amount = cart.reduce((total, cartItem) => {
       return (total += cartItem.amount);
     }, 0);
     cartItemCountDOM.textContent = amount;
   }
+
   function displayCartTotal() {
     let total = cart.reduce((total, cartItem) => {
       return (total += cartItem.price * cartItem.amount);
     }, 0);
     cartTotalDOM.textContent = `Total : ${formatPrice(total)} `;
   }
+
   function displayCartItemsDOM() {
     cart.forEach((cartItem) => {
       addToCartDOM(cartItem);
     });
   }
+
   function removeItem(id) {
     cart = cart.filter((cartItem) => cartItem.id !== id);
   }
+
   function increaseAmount(id) {
     let newAmount;
     cart = cart.map((cartItem) => {
@@ -72,6 +77,7 @@ import {
     });
     return newAmount;
   }
+  
   function decreaseAmount(id) {
     let newAmount;
     cart = cart.map((cartItem) => {
