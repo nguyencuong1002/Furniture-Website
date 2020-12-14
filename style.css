@@ -191,6 +191,7 @@ Navbar
 }
 .nav-links {
   display: none;
+  margin-bottom: 0;
 }
 .toggle-nav {
   background: var(--clr-primary-5);
@@ -292,7 +293,7 @@ Hero
   min-height: 100vh;
   margin-top: -6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('images/bg-14.jpg') center/cover;
+    url('images/bg-home.jpg') center/cover;
   display: grid;
   place-items: center;
   color: var(--clr-white);
@@ -781,6 +782,45 @@ Single Product Page
   max-width: 25em;
   line-height: 1.8;
 }
+/* Footer section*/
+.footer {
+  background: #F7F7F7;
+  padding: 50px 0;
+}
+
+.footer .footer-menu {
+  margin-top: 30px;
+}
+
+.footer .footer-menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer .footer-menu li a {
+  color: #333;
+  font-size: 12px;
+}
+
+.footer .copyright-text {
+  margin-top: 20px;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-media li a {
+  padding: 8px 10px;
+}
+
+.social-media li a i {
+  font-size: 20px;
+  color: #555;
+}
+
+
 @media screen and (min-width: 992px) {
   .single-product-center {
     grid-template-columns: 1fr 1fr;
